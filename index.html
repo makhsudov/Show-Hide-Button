@@ -1,0 +1,28 @@
+<ul>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<div id="more" style="display: none;">
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+	</div>
+</ul>
+
+<button id="btn" onclick="readMore()">Show</button>
+
+<script>
+function readMore () {
+  var more = document.getElementById("more");
+  var btn = document.getElementById("btn");
+
+  if (more.style.display==="inline"){
+    btn.innerHTML="Show";
+    more.style.display="none";
+  } else {
+    btn.innerHTML="Hide";
+    // btn.style.display="none";
+    more.style.display="inline";
+  }
+}
+</script>
